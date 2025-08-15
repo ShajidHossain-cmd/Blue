@@ -16,8 +16,9 @@ body {
   line-height: 1.6;
   background-color: var(--background-color);
   color: var(--text-color);
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
+  /* background-image: url("/images/background.jpg"); */
 }
 
 nav {
@@ -54,7 +55,7 @@ ul a {
   padding: 20px;
   text-align: center;
   margin: 0 auto;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 h2,
 h3 {
@@ -69,13 +70,90 @@ iframe {
   border: 2px solid var(--accent-color);
   border-radius: 12px;
   margin: auto;
+  margin-bottom: 20px;
+}
+#email {
+  display: block;
+  text-align: center;
+  color: var(--link-color);
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
 }
 footer a {
   display: block;
   font-size: larger;
-  color: var(--secondary-color);
+
   text-align: center;
   padding-top: 1rem;
   margin: auto;
   text-decoration: none;
+}
+.card {
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+.card ul {
+  display: block;
+}
+.card ul li {
+  list-style: circle;
+  color: var(--text-color);
+  padding: 10px;
+}
+.services ul li {
+  list-style: disc;
+  color: var(--text-color);
+  padding: 10px;
+}
+header {
+  text-align: center;
+}
+
+aside a {
+  font-size: 1.2rem;
+  width: 25%;
+  float: right;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  margin: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: var(--accent-color);
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* Footer styling */
+footer {
+  clear: both;
+  display: flex;
+  justify-content: space-between; /* Spreads the two spans */
+  align-items: center;
+
+  background-color: var(--accent-color);
+
+  font-family: Arial, sans-serif;
+
+  padding: 0.75rem 1.5rem;
+
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+footer span {
+  display: inline-block;
+  max-width: 45%; /* Prevents text from stretching too much */
+}
+
+aside a {
+  text-decoration: none;
+}
+aside a:hover {
+  background-color: white;
 }
