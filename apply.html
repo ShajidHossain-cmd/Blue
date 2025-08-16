@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Kasorn Leelapisuth" />
+    <link rel="stylesheet" href="styles/apply.css" />
+</head>
+
+<body>
+     <!-- Navigation section  -->
+    <nav>
+      <a href="/index.html">
+        <img
+          width="50"
+          height="60"
+          src="images/backgroundTech.png"
+          alt="logo"
+        />
+        <!-- remember to remove  the css -->
+      </a>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/jobs.html">Jobs</a></li>
+        <li><a href="/apply.html">Apply</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/enhancements.html">Enhancements</a></li>
+      </ul>
+    </nav>
+
+<section id="Apply">
+    <h1>Application</h1>
+<fieldset>
+            <p>
+                <label for="Job_Reference_Numbers">Job Reference Numbers</label>
+                <input type="text" id="Job_Reference_Numbers" name="Job_Reference_Numbers" maxlength="5" size="15" required="required" />
+            </p>
+</fieldset>
+<fieldset>
+                <legend>Name</legend>
+            <p>
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name" maxlength="20" size="20" required="required" />
+
+                <label for="last_name">Family Name</label>
+                <input type="text" name="last_name" id="family_name" maxlength="20" size="20" required="required" />
+            </p>
+            
+</fieldset>                 
+<fieldset>
+
+            <legend>Gender</legend>
+            <p>
+                <input type="radio" id="male" name="unit" value="male" />
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="unit" value="female" />
+                <label for="female">Female</label>
+
+                <input type="radio" id="crossiant" name="unit" value="crossiant" />
+                <label for="crossiant">Crossiant</label>
+
+                <input type="radio" id="other" name="unit" value="other" />
+                <label for="other">Other</label>
+
+
+            </p>
+</fieldset>
+<fieldset>
+    <legend>Address & Contact Details</legend>
+    <p>
+        <label for="street">Street Address</label>
+        <input type="text" name="street" id="first_name" maxlength="40" size="20" required="required" />
+
+        <label for="sub_tw">Suburb/Town</label>
+        <input type="text" name="sub_tw" id="sub_tw" maxlength="40" size="20" required="required" />
+             <p>
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="Select">Select</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ATC">ATC</option>
+                </select>
+            </p>
+    </p>
+
+<label for="postcode">Postcode</label>
+<input type="text" id="postcode" name="postcode" required pattern="[0-9]{4}" maxlength="4" inputmode="numeric"
+  oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,4)" />
+
+ <br><br>
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required />
+
+ <br><br>
+<label for="phone">Phone number</label>
+<input 
+  type="text" id="phone" name="phone" required pattern="[0-9 ]{8,12}" 
+  title="Please enter 8 to 12 digits or spaces only"
+  maxlength="12"
+  oninput="this.value = this.value.replace(/[^0-9 ]/g, '')" 
+/>
+</fieldset>
+<fieldset>
+  <legend>Skills</legend>
+  <div class="skills">
+    <label><input type="checkbox" id="skill1" name="skills" value="html"> HTML</label>
+    <label><input type="checkbox" id="skill2" name="skills" value="css"> CSS</label>
+    <label><input type="checkbox" id="skill3" name="skills" value="javascript"> JavaScript</label>
+    <label><input type="checkbox" id="skill4" name="skills" value="other"> Other</label>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Other Skills</legend>
+  <textarea id="otherSkillsText" name="otherSkillsText" rows="4" cols="40"></textarea>
+</fieldset>
+
+
+</fieldset>
+<p>
+        <input type="submit" value="Apply" />
+</p>
+
+<footer>© 2025 IT Company</footer>
+
+</section>
+</body>

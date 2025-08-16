@@ -1,0 +1,256 @@
+/*
+filename: apply.css
+author: Kasorn Leelapisuth
+created: 14/08/2025
+description: Styling for application form
+*/
+
+
+* {
+  box-sizing: border-box;
+  font-family: Calibri, Arial, sans-serif;
+  color: #242C39;
+}
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background-color: #f6f7fb;
+}
+
+body::before {
+  content: "";
+  display: block;
+  height: 64px;
+  background-image: linear-gradient(#0f1720, #1a2430);
+  box-shadow: inset 0 2px 10px rgba(0,0,0,0.25);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;  
+  background-image: linear-gradient(#0f1720, #1a2430);
+  box-shadow: inset 0 2px 10px rgba(0,0,0,0.25);
+  padding: 16px 40px;           
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 30px;            
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+nav a:last-child {
+  margin-right: 0;              
+}
+
+nav a:hover {
+  color: #93c5fd;
+  border-bottom: 2px solid #93c5fd;
+}
+
+
+
+
+#Apply {
+  max-width: 960px;
+  margin: 0 auto;      
+  padding: 0 20px;      
+}
+
+
+#Apply h1 {
+  color: #0b1220;
+  font-size: 44px;
+  font-weight: bold;
+  margin: 28px 0 8px 0;
+  letter-spacing: 0.2px;
+}
+
+
+#Apply fieldset {
+  border: none;
+  margin: 14px 0;
+  padding: 18px 0 6px 0;
+}
+
+#Apply legend {
+  display: block;
+  font-weight: 600;    
+  font-size: 16px;    
+}
+
+#Apply label {
+  display: block;
+  font-weight: 600;
+  margin: 14px 0 6px 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 0;
+  background: #fff;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #000;
+  box-shadow: none;
+}
+
+fieldset br { display: none; }
+
+
+input[type="radio"] {
+  accent-color: #2563eb;
+  margin-right: 8px;
+  transform: translateY(2px);
+}
+
+#male + label,
+#female + label,
+#crossiant + label,
+#other + label {
+  display: inline-block;
+  margin: 0 20px 0 6px;
+  font-weight: 500;
+}
+
+
+label[for="first_name"],
+label[for="family_name"] {
+  display: inline-block;
+  width: 48%;
+  margin-top: 14px;
+}
+label[for="first_name"] { margin-right: 4%; }
+
+#first_name,
+#family_name {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+}
+#first_name { margin-right: 4%; }
+
+
+label[for="street"],
+#street {
+  display: block;
+  width: 100%;
+}
+
+label[for="sub_tw"],
+#sub_tw {
+  display: block;
+  width: 100%;
+}
+
+
+label[for="state"] { display: block; margin-top: 14px; }
+#state { width: 220px; max-width: 100%; }
+
+
+label[for="postcode"] { margin-top: 14px; }
+#postcode { width: 220px; max-width: 100%; }
+
+
+label[for="email"],
+label[for="phone"] {
+  display: inline-block;
+  width: 48%;
+  font-weight: 600;
+}
+label[for="email"] { margin-right: 4%; }
+
+#email,
+#phone {
+  display: inline-block;
+  width: 48%;
+  margin-top: 6px;
+}
+#email { margin-right: 4%; }
+
+
+input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  margin-right: 8px;
+  accent-color: #2563eb;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 40px; 
+}
+
+.skills label {
+  display: inline-flex;
+  align-items: center;
+  width: 45%;
+  font-weight: normal;
+}
+
+
+
+input[type="submit"] {
+  border: none;
+  background-color: #295ccb;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1d4ed8;
+}
+
+
+footer {
+  color: #6b7280;
+  text-align: center;
+  margin: 26px 0 60px 0;
+  padding: 0 20px;
+}
+
+
+@media (max-width: 680px) {
+  label[for="first_name"],
+  label[for="family_name"],
+  #first_name,
+  #family_name,
+  label[for="email"],
+  label[for="phone"],
+  #email,
+  #phone {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  label[for="skill1"],
+  label[for="skill2"],
+  label[for="skill3"],
+  label[for="skill4"],
+  label[for="otherSkills"] {
+    width: 100%;
+  }
+
+  #Apply { margin-left: 20px; margin-right: 20px; }
+}
