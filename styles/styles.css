@@ -1,3 +1,11 @@
+/*
+File Name: Assignment01
+Author: MD SAJID HOSSAIN SHAD
+Created: 14/8/2025
+Last Modified: 16/8/2025
+Description: [index page styles]
+*/
+
 /*Global colors */
 :root {
   --primary-color: #005f99;
@@ -46,17 +54,32 @@ ul a {
   font-size: 1.2rem;
   transition: color 0.3s ease;
 }
+/*Hero  animation*/
 .hero {
   background: linear-gradient(
-    /*gradient */ 135deg,
+    135deg,
     var(--secondary-color),
-    var(--primary-color)
+    var(--primary-color),
+    var(--accent-color)
   );
+  background-size: 400% 400%;
   color: white;
   padding: 20px;
   text-align: center;
   margin: 0 auto;
   font-size: 2rem;
+  animation: gradientMove 15s ease infinite;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 h2,
 h3 {
@@ -117,6 +140,8 @@ footer a {
   list-style: disc;
   color: var(--text-color);
   padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 header {
   text-align: center;
@@ -163,4 +188,79 @@ aside a {
 }
 aside a:hover {
   background-color: white;
+  color: var(--accent-color);
+} /* Hide checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+/* Responsive nav styling */
+@media (max-width: 586px) {
+  /* Show hamburger */
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+  }
+  nav ul li:hover {
+    background-color: white;
+  }
+  nav ul li:hover a {
+    color: var(--accent-color);
+  }
+  /* Show menu when checkbox checked */
+  .menu-toggle:checked + .menu-icon + ul {
+    display: flex;
+  }
+  .services ul {
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    padding: 0;
+    margin: 0 auto; /* center on the page */
+    gap: 10px; /* space between items */
+  }
+  .services ul li {
+    list-style: disc;
+    color: var(--text-color);
+    padding: 10px;
+  }
+
+  iframe {
+    display: block;
+    width: 370px;
+    height: 200px;
+    border: 2px solid var(--accent-color);
+    border-radius: 12px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
 }
