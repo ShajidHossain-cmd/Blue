@@ -1,6 +1,6 @@
 /*
 filename: apply.css
-author: Kasorn Leelapisuth
+author: PITI PAV
 created: 14/08/2025
 description: Styling for application form
 */
@@ -121,7 +121,6 @@ input[type="radio"] {
 
 #male + label,
 #female + label,
-#crossiant + label,
 #other + label {
   display: inline-block;
   margin: 0 20px 0 6px;
