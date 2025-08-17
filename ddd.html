@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="author" content="Kasorn Leelapisuth" />
-    <title>Application</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="PITI PAV ANd Kasorn Leelapisuth" />
+    <title>Application</title>
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="styles/apply.css" />
   </head>
@@ -147,6 +147,7 @@
             required
             pattern="[0-9]{4}"
             maxlength="4"
+            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,4)"
           />
 
           <br /><br />
@@ -160,9 +161,10 @@
             id="phone"
             name="phone"
             required
-            pattern="[0-9]{8,12}"
+            pattern="[0-9 ]{8,12}"
             title="Please enter 8 to 12 digits or spaces only"
             maxlength="12"
+            oninput="this.value = this.value.replace(/[^0-9 ]/g, '')"
           />
         </fieldset>
 

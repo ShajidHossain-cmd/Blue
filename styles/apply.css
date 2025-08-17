@@ -1,61 +1,9 @@
 /*
 filename: apply.css
-author: PITI PAV ANd Kasorn Leelapisuth
+author: PITI PAV 
 created: 14/08/2025
 description: Styling for application form
 */
-/* 
-:root {
-  --primary-color: #005f99;
-  --secondary-color: #0080cc;
-  --accent-color: #00bfff;
-  --background-color: #f4f6f8;
-  --text-color: #ffffff;
-  --heading-color2: #003366;
-  --heading-color: #e9e1e1;
-  --link-color: var(--secondary-color);
-  --link-hover-color: #004d99;
-}
-
-html,
-body {
-  height: 100%;
-}
-body {
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  margin: 0;
-  padding: 0;
-  background-image: url("/images/backgroundTech.png");
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--primary-color);
-  align-items: center;
-}
-
-ul {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 1rem;
-}
-ul li {
-  list-style: none;
-  color: var(--text-color);
-  padding: 10px;
-}
-ul a {
-  color: white;
-  font-weight: 550;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
-} */
 
 #Apply h1 {
   color: #fff;
