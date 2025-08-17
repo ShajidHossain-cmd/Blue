@@ -1,0 +1,109 @@
+/*
+File Name: home.css
+Author: MD SAJID HOSSAIN SHAD
+Created: 14/8/2025
+Last Modified: 16/8/2025
+Description: [
+1.index page
+2.jobs styles.
+3.global styles
+4.responsive design(enhancement)
+5.navigation bar.
+6.footer.
+7.hero section with animation(enhancement)]
+8.hamburger menu(interactive enhancement)
+9.iframe video section.
+10.background image added.
+*/
+
+h2,
+h3 {
+  color: var(--heading-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+iframe {
+  display: block;
+  width: 500px;
+  height: 250px;
+  border: 2px solid var(--accent-color);
+  border-radius: 12px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#Myemail {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+aside a {
+  text-decoration: none;
+}
+aside a:hover {
+  background-color: var(--secondary-color);
+  color: var(--heading-color2);
+}
+.services ul li {
+  list-style: disc;
+  color: var(--text-color);
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+/*Hero  animation*/
+.hero {
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--primary-color),
+    var(--accent-color)
+  );
+  background-size: 400% 400%;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  animation: gradientMove 15s ease infinite;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Responsive nav styling */
+@media (max-width: 586px) {
+  .services ul {
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    padding: 0;
+    margin: 0 auto; /* center on the page */
+    gap: 10px; /* space between items */
+  }
+  .services ul li {
+    list-style: disc;
+    color: var(--text-color);
+    padding: 10px;
+  }
+
+  iframe {
+    display: block;
+    width: 370px;
+    height: 200px;
+    border: 2px solid var(--accent-color);
+    border-radius: 12px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}

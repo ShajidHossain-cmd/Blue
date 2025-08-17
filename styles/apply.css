@@ -1,76 +1,72 @@
 /*
 filename: apply.css
-author: Kasorn Leelapisuth
+author: PITI PAV ANd Kasorn Leelapisuth
 created: 14/08/2025
 description: Styling for application form
 */
-
-
-* {
-  box-sizing: border-box;
-  font-family: Calibri, Arial, sans-serif;
-  color: #242C39;
+/* 
+:root {
+  --primary-color: #005f99;
+  --secondary-color: #0080cc;
+  --accent-color: #00bfff;
+  --background-color: #f4f6f8;
+  --text-color: #ffffff;
+  --heading-color2: #003366;
+  --heading-color: #e9e1e1;
+  --link-color: var(--secondary-color);
+  --link-hover-color: #004d99;
 }
 
-html, body { height: 100%; }
+html,
 body {
-  margin: 0;
-  background-color: #f6f7fb;
+  height: 100%;
 }
-
-body::before {
-  content: "";
-  display: block;
-  height: 64px;
-  background-image: linear-gradient(#0f1720, #1a2430);
-  box-shadow: inset 0 2px 10px rgba(0,0,0,0.25);
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  background-image: url("/images/backgroundTech.png");
 }
 
 nav {
-  width: 100%;
   display: flex;
-  justify-content: flex-start;  
-  background-image: linear-gradient(#0f1720, #1a2430);
-  box-shadow: inset 0 2px 10px rgba(0,0,0,0.25);
-  padding: 16px 40px;           
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  align-items: center;
 }
 
-nav a {
-  color: #fff;
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+ul li {
+  list-style: none;
+  color: var(--text-color);
+  padding: 10px;
+}
+ul a {
+  color: white;
+  font-weight: 550;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  margin-right: 30px;            
-  transition: color 0.2s ease, border-bottom 0.2s ease;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+} */
+
+#Apply h1 {
+  color: #fff;
+  font-weight: bold;
 }
-
-nav a:last-child {
-  margin-right: 0;              
-}
-
-nav a:hover {
-  color: #93c5fd;
-  border-bottom: 2px solid #93c5fd;
-}
-
-
-
 
 #Apply {
   max-width: 960px;
-  margin: 0 auto;      
-  padding: 0 20px;      
+  margin: 0 auto;
+  padding: 0 20px;
 }
-
-
-#Apply h1 {
-  color: #0b1220;
-  font-size: 44px;
-  font-weight: bold;
-  margin: 28px 0 8px 0;
-  letter-spacing: 0.2px;
-}
-
 
 #Apply fieldset {
   border: none;
@@ -80,8 +76,8 @@ nav a:hover {
 
 #Apply legend {
   display: block;
-  font-weight: 600;    
-  font-size: 16px;    
+  font-weight: 600;
+  font-size: 16px;
 }
 
 #Apply label {
@@ -110,8 +106,9 @@ select:focus {
   box-shadow: none;
 }
 
-fieldset br { display: none; }
-
+fieldset br {
+  display: none;
+}
 
 input[type="radio"] {
   accent-color: #2563eb;
@@ -121,13 +118,11 @@ input[type="radio"] {
 
 #male + label,
 #female + label,
-#crossiant + label,
 #other + label {
   display: inline-block;
   margin: 0 20px 0 6px;
   font-weight: 500;
 }
-
 
 label[for="first_name"],
 label[for="family_name"] {
@@ -135,7 +130,9 @@ label[for="family_name"] {
   width: 48%;
   margin-top: 14px;
 }
-label[for="first_name"] { margin-right: 4%; }
+label[for="first_name"] {
+  margin-right: 4%;
+}
 
 #first_name,
 #family_name {
@@ -143,8 +140,9 @@ label[for="first_name"] { margin-right: 4%; }
   width: 48%;
   vertical-align: top;
 }
-#first_name { margin-right: 4%; }
-
+#first_name {
+  margin-right: 4%;
+}
 
 label[for="street"],
 #street {
@@ -158,14 +156,22 @@ label[for="sub_tw"],
   width: 100%;
 }
 
+label[for="state"] {
+  display: block;
+  margin-top: 14px;
+}
+#state {
+  width: 220px;
+  max-width: 100%;
+}
 
-label[for="state"] { display: block; margin-top: 14px; }
-#state { width: 220px; max-width: 100%; }
-
-
-label[for="postcode"] { margin-top: 14px; }
-#postcode { width: 220px; max-width: 100%; }
-
+label[for="postcode"] {
+  margin-top: 14px;
+}
+#postcode {
+  width: 220px;
+  max-width: 100%;
+}
 
 label[for="email"],
 label[for="phone"] {
@@ -173,7 +179,9 @@ label[for="phone"] {
   width: 48%;
   font-weight: 600;
 }
-label[for="email"] { margin-right: 4%; }
+label[for="email"] {
+  margin-right: 4%;
+}
 
 #email,
 #phone {
@@ -181,30 +189,34 @@ label[for="email"] { margin-right: 4%; }
   width: 48%;
   margin-top: 6px;
 }
-#email { margin-right: 4%; }
-
+#email {
+  margin-right: 4%;
+}
 
 input[type="checkbox"] {
   width: auto;
   height: auto;
-  margin-right: 8px;
+  margin-right: 6px;
   accent-color: #2563eb;
 }
 
-.skills {
+#html + label,
+#css + label,
+#javascript + label,
+#otherSkills + label {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 40px; 
 }
 
-.skills label {
+#html + label,
+#css + label,
+#javascript + label,
+#otherSkills + label {
   display: inline-flex;
   align-items: center;
-  width: 45%;
+  width: 46%;
   font-weight: normal;
 }
-
-
 
 input[type="submit"] {
   border: none;
@@ -221,16 +233,27 @@ input[type="submit"]:hover {
   background-color: #1d4ed8;
 }
 
-
 footer {
-  color: #6b7280;
-  text-align: center;
-  margin: 26px 0 60px 0;
-  padding: 0 20px;
+  clear: both;
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--accent-color);
+
+  font-family: Arial, sans-serif;
+
+  padding: 0.75rem 1.5rem;
+
+  font-size: 1rem;
+  font-weight: bold;
 }
 
+footer span {
+  display: inline-block;
+  max-width: 45%;
+}
 
-@media (max-width: 680px) {
+@media (max-width: 778px) {
   label[for="first_name"],
   label[for="family_name"],
   #first_name,
@@ -244,13 +267,18 @@ footer {
     margin-right: 0;
   }
 
-  label[for="skill1"],
-  label[for="skill2"],
-  label[for="skill3"],
-  label[for="skill4"],
+  label[for="html"],
+  label[for="css"],
+  label[for="javascript"],
   label[for="otherSkills"] {
     width: 100%;
   }
-
-  #Apply { margin-left: 20px; margin-right: 20px; }
+  .checkbox-group {
+    display: flex;
+    /* flex-direction: column; */
+  }
+  #Apply {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
