@@ -1,0 +1,60 @@
+/* enhancement.css - Enhancements page styles, using global fonts/colors from styles.css */
+
+/* Main container for enhancements page */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: "Roboto", Arial, sans-serif; /* inherit global font */
+  color: var(--text-color); /* use global text color */
+}
+
+/* Highlight each enhancement section */
+section {
+  background-color: rgba(0, 95, 153, 0.1); /* soft version of primary color */
+  border-left: 5px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Section headings */
+section h2 {
+  color: var(--heading-color); /* use global heading color */
+  font-family: "Roboto", Arial, sans-serif; /* inherit global font */
+}
+
+/* Code blocks for showing CSS/HTML examples */
+pre {
+  background-color: #0080cc;
+  color: var(--text-color);
+  padding: 10px;
+  overflow-x: auto;
+  border-radius: 8px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Inline code styling */
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  white-space: pre-wrap; /* allow wrapping */
+}
+
+/* Links inside sections */
+section a {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+section a:hover {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Optional: small spacing for header */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}

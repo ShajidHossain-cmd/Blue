@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CogniTech — Enhancements</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/enhancements.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <a href="/index.html">
+        <img
+          src="styles/images/CogniTech_Logo.png"
+          width="90"
+          height="90"
+          alt="logo"
+        />
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/jobs.html">Jobs</a></li>
+        <li><a href="/apply.html">Apply</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/enhancements.html">Enhancements</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Enhancements Implemented</h1>
+      <p>
+        This page lists the extra features added to the website beyond the basic
+        requirements.
+      </p>
+    </header>
+
+    <main>
+      <!-- Enhancement 1 -->
+      <section>
+        <h2>Animated Hero Section Background</h2>
+        <p>
+          The homepage hero section has a moving gradient background using
+          <code>@keyframes</code> animation. This makes the page visually
+          dynamic and engaging.
+        </p>
+        <p>
+          <strong>Reference:</strong>
+          <a
+            href="https://css-tricks.com/almanac/properties/a/animation/"
+            target="_blank"
+            >CSS-Tricks Animations</a
+          >
+        </p>
+        <pre><code>
+.hero {
+  background: linear-gradient(270deg, #4facfe, #00f2fe);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+      </code></pre>
+        <p><a href="index.html#hero">See the hero section</a></p>
+      </section>
+
+      <!-- Enhancement 2 -->
+      <section>
+        <h2>Responsive Hamburger Menu</h2>
+        <p>
+          The navigation bar becomes a hamburger menu on small screens using the
+          CSS checkbox hack. Users can toggle the menu without JavaScript,
+          improving usability on mobile devices.
+        </p>
+        <p>
+          <strong>Reference:</strong>
+          <a href="https://css-tricks.com/the-checkbox-hack/" target="_blank"
+            >CSS Tricks: Checkbox Hack</a
+          >
+        </p>
+        <p><a href="index.html">See the menu in action</a></p>
+      </section>
+      <section>
+        <h2>Fully Responsive Design</h2>
+        <p>
+          All pages of this website are fully responsive. Media queries and
+          flexible layouts ensure content adapts to desktop, tablet, and mobile
+          screen sizes, enhancing user experience.
+        </p>
+        <p>
+          <strong>Reference:</strong>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
+            target="_blank"
+            >MDN Responsive Design</a
+          >
+        </p>
+        <p><a href="index.html">See the enhancement in action</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Tech Careers Australia | All rights reserved.</p>
+      <p>Sources: Google Scholar, ACM Digital Library, TechCrunch</p>
+    </footer>
+  </body>
+</html>
