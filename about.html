@@ -2,22 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="MD TASNIMUL HASAN NISHAT" />
     <title>IT Company — Home</title>
-    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/about.css" />
   </head>
+
   <body>
     <!-- Navigation section  -->
     <nav>
       <a href="/index.html">
         <img
-          width="50"
-          height="60"
-          src="images/backgroundTech.png"
+          width="90"
+          height="90"
+          src="styles/images/CogniTech_Logo.png"
           alt="logo"
         />
         <!-- remember to remove  the css -->
       </a>
+      <!-- Checkbox for menu toggle reference
+        "https://www.w3schools.com/howto/howto_js_topnav_responsive.asp"
+       and the on click  work around for the hamburger menu from
+      " https://css-tricks.com/the-checkbox-hack/" 
+       
+      -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+      <!-- Hamburger icon -->
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <ul>
         <li><a href="/index.html">Home</a></li>
         <li><a href="/jobs.html">Jobs</a></li>
@@ -28,18 +41,14 @@
     </nav>
 
     <section id="About">
-      <h1><u>About Our Group</u></h1>
+      <h1>About Our Group</h1>
 
-      <h3><u>Group Name:</u> Nuclear bomb</h3>
+      <h3>Group Name: Nuclear bomb</h3>
 
-      <h3>Ours' Photo</h3>
+      <h3>Ours' Group Photo</h3>
+
       <figure>
-        <img
-          src="styles/images/group.photo.jpg"
-          alt="Group Photo"
-          width="250"
-        />
-        <figcaption>Our Group Members</figcaption>
+        <img src="images/group.photo.jpg" alt="Group Photo" width="650" />
       </figure>
 
       <h3>Group Information</h3>
@@ -94,16 +103,20 @@
 
       <dl>
         <dt>
-          <u><strong>Tutor:</strong></u>
+          <strong>Tutor:</strong>
         </dt>
+
         <dd>Dr. MD Kafil Uddin</dd>
+
         <dt>
-          <u><strong>Course:</strong></u>
+          <strong>Course:</strong>
         </dt>
+
         <dd>
           Name: Diploma Leading to Bachelor of Computer Science (Computing
           Systems Project)
         </dd>
+
         <dd>ID: 2025-SC2-COS10032</dd>
       </dl>
 
@@ -131,21 +144,11 @@
         </tr>
       </table>
 
-      <h3>Profile</h3>
+      <h3><u>Profile</u></h3>
 
       <dl>
         <dt>
-          <u><strong>MD TASNIMUL HASAN NISHAT</strong></u>
-        </dt>
-        <dd><u>Skills</u>: HTML, CSS, C++</dd>
-        <dd><u>Experience</u>: Communication, Volunteer, TEAM WORKING (KFC)</dd>
-        <dd><u>Interests</u>: Gaming, Community service</dd>
-        <dd><u>Country</u>: Bangladesh</dd>
-      </dl>
-
-      <dl>
-        <dt>
-          <u><strong>LIKITH TRIPURANENI</strong></u>
+          <strong>LIKITH TRIPURANENI:</strong>
         </dt>
         <dd><u>Skills</u>: HTML, CSS, JS, Python</dd>
         <dd><u>Experience</u>: Web internships</dd>
@@ -155,7 +158,17 @@
 
       <dl>
         <dt>
-          <u><strong>PITI PAV</strong></u>
+          <strong>MD TASNIMUL HASAN NISHAT:</strong>
+        </dt>
+        <dd><u>Skills</u>: HTML, CSS, C++</dd>
+        <dd><u>Experience</u>: Communication, Volunteer, TEAM WORKING (KFC)</dd>
+        <dd><u>Interests</u>: Gaming, Community service</dd>
+        <dd><u>Country</u>: Bangladesh</dd>
+      </dl>
+
+      <dl>
+        <dt>
+          <strong>PITI PAV:</strong>
         </dt>
         <dd><u>Skills</u>: HTML, CSS, C++</dd>
         <dd><u>Experience</u>: Web Gaming</dd>
@@ -165,7 +178,7 @@
 
       <dl>
         <dt>
-          <u><strong>Kasorn Leelapisuth</strong></u>
+          <strong>KASORN LEELAPISUTH:</strong>
         </dt>
         <dd><u>Skills</u>: Python, HTML, C++, CSS</dd>
         <dd><u>Experience</u>: creating a small personal website</dd>
@@ -175,17 +188,21 @@
 
       <dl>
         <dt>
-          <u><strong>MD TANJIDUR RAHMAN</strong></u>
+          <strong>MD SAJID HOSSAIN SHAD:</strong>
         </dt>
-        <dd><u>Skills</u>: HTML, CSS, JS, Python</dd>
-        <dd><u>Experience</u>: Web internships</dd>
-        <dd><u>Interests</u>: Coding, gaming</dd>
+        <dd><u>Skills</u>: Svelte JS, Python, C++, C, Fullstack Development</dd>
+        <dd>
+          <u>Experience</u>: Web internships, Vlog wedside, Deployed Vercel
+        </dd>
+        <dd>
+          <u>Interests</u>: Coding, Self improvement, Reading chinese Web Novel
+        </dd>
         <dd><u>Country</u>: Bangladesh</dd>
       </dl>
 
       <dl>
         <dt>
-          <u><strong>SAJID HOSSAIN SHAD</strong></u>
+          <strong>MD TANJIDUR RAHMAN:</strong>
         </dt>
         <dd><u>Skills</u>: HTML, CSS, JS, Python</dd>
         <dd><u>Experience</u>: Web internships</dd>
@@ -193,7 +210,13 @@
         <dd><u>Country</u>: Bangladesh</dd>
       </dl>
     </section>
-
-    <footer>© 2025 IT Company</footer>
+    <footer>
+      <span
+        ><p>&copy; 2025 Tech Careers Australia | All rights reserved.</p></span
+      >
+      <span>
+        <p>Sources: Google Scholar, ACM Digital Library, TechCrunch</p></span
+      >
+    </footer>
   </body>
 </html>

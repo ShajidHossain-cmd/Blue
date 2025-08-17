@@ -1,0 +1,54 @@
+/*
+File Name: Assignment01
+Author: MD TASNIMUL HASAN NISHAT
+Created: 14/8/2025
+Last Modified: 16/8/2025
+Description: [html about]
+*/
+
+table {
+  border-collapse: collapse;
+  width: 98%;
+}
+
+th,
+td {
+  border: 2px solid var(--accent-color);
+  padding: 2px 4px;
+  text-align: left;
+}
+
+th {
+  background-color: #0080cc;
+}
+
+td a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+h3 {
+  color: var(--text-color);
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+}
+figure img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 8px;
+  border: 3px solid var(--accent-color);
+}
+@media (max-width: 520px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+}
