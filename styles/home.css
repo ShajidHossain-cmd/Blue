@@ -14,6 +14,7 @@ Description: [
 8.hamburger menu(interactive enhancement)
 9. video section.
 10.background image added.
+11. interactive stats
 */
 
 h2,
@@ -22,6 +23,7 @@ h3 {
   margin-bottom: 10px;
   text-align: center;
 }
+/*video styles*/
 video {
   display: block;
   width: 500px;
