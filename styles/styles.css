@@ -25,6 +25,7 @@ Description: [
   --text-color: #ffffff;
   --heading-color2: #003366;
   --heading-color: #e9e1e1;
+
   --link-color: var(--secondary-color);
   --link-hover-color: #004d99;
 }
@@ -87,7 +88,7 @@ footer {
   align-items: center;
 
   background-color: var(--accent-color);
-
+  color: black;
   font-family: Arial, sans-serif;
 
   padding: 0.75rem 1.5rem;

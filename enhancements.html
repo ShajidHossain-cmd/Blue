@@ -56,17 +56,54 @@
         </p>
         <pre><code>
 .hero {
-  background: linear-gradient(270deg, #4facfe, #00f2fe);
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--primary-color),
+    var(--accent-color)
+  );
   background-size: 400% 400%;
-  animation: gradientBG 10s ease infinite;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  animation: gradientMove 15s ease infinite;
 }
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
       </code></pre>
         <p><a href="index.html#hero">See the hero section</a></p>
+      </section>
+      <section class="stats-enhancement">
+        <h2>Animated Stats Section</h2>
+        <p>
+          The stats section now has a hover animation that scales each stat box
+          and changes its background, making it more interactive and engaging.
+        </p>
+
+        <!-- Code Block showing only the animation CSS -->
+        <pre><code>
+.stat-box {
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.2);
+}
+  </code></pre>
+
+        <p><a href="index.html#stats">See the animated stats section</a></p>
       </section>
 
       <!-- Enhancement 2 -->
@@ -83,6 +120,62 @@
             >CSS Tricks: Checkbox Hack</a
           >
         </p>
+        <pre><code>
+          
+/* Hide checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+/* Responsive nav styling */
+@media (max-width: 586px) {
+  /* Show hamburger */
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+  }
+  nav ul li:hover {
+    background-color: white;
+  }
+  nav ul li:hover a {
+    color: var(--accent-color);
+  }
+  /* Show menu when checkbox checked */
+  .menu-toggle:checked + .menu-icon + ul {
+    display: flex;
+  }
+}
+
+  </code></pre>
         <p><a href="index.html">See the menu in action</a></p>
       </section>
       <section>
